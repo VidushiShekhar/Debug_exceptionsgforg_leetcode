@@ -1,0 +1,13 @@
+ encountered Wrong Answer/Runtime Error for a specific test case.
+ When I test my code using this test case, it produced the correct output. Why?
+
+First, please check if you are using any global or static variables.
+ They are Evil, period. If you must declare one, reset them in the first line
+ of your called method or in the default constructor.
+
+Why? Because the system executes all test cases using the same program instance,
+ global/static variables affect the program state from one test case to another.
+ See this Discuss thread for an example.
+
+The same problem was encountered in Geeks for geeks solution submission.
+The screenshot is Attached with  the solution of how to debug the problem
